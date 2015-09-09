@@ -123,40 +123,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case 0:
                 if (btn.getText().toString().equals("+")) {
                     conditionFlag = 2;
+                    number = 0;
+                    math.setText(Float.toString(result) + "+");
                     targilTemp.add(Float.toString(result));
                     targilTemp.add("+");
-                    number=0;
-                    if(Math.floor(result)!=0)
-                        math.setText(Float.toString(result) + "+");
-                    else
-                        math.setText(Integer.toString((int)result) + "+");
                 }
                 if (btn.getText().toString().equals("-")) {
                     conditionFlag = 2;
-                    targilTemp.add(Float.toString(result));
-                    targilTemp.add("-");
                     number=0;
                     math.setText(Float.toString(result) + "-");
+                    targilTemp.add(Float.toString(result));
+                    targilTemp.add("-");
                 }
                 if (btn.getText().toString().equals("*")) {
                     conditionFlag = 2;
+                    number=0;
+                    math.setText(Float.toString(result) + "*");
                     targilTemp.add(Float.toString(result));
                     targilTemp.add("*");
-                    number=0;
-                    if(Math.floor(result)!=0)
-                        math.setText(Float.toString(result) + "*");
-                    else
-                        math.setText(Integer.toString((int)result) + "*");
+
                 }
                 if (btn.getText().toString().equals("/")) {
                     conditionFlag = 2;
+                    number=0;
+                    math.setText(Float.toString(result) + "/");
                     targilTemp.add(Float.toString(result));
                     targilTemp.add("/");
-                    number=0;
-                    if(Math.floor(result)!=0)
-                        math.setText(Float.toString(result) + "/");
-                    else
-                        math.setText(Integer.toString((int)result) + "/");
+
                 }
                 break;
             case 1:
@@ -321,7 +314,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             else i++;
         }
         math.setText(targil);
-
     }
 
 
