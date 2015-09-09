@@ -237,9 +237,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         targil=targil.replaceAll(" ", "");
         targil= targil.replaceAll("\\[", "");
         targil=targil.replaceAll("]","");
-
-
-        math.setText(targil.toString());
         ///////////////////////////////////////////////////////////////////////////////
         int opIndex;
         int nowIndex, startIndex, endIndex;
